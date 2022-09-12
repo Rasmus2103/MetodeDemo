@@ -5,7 +5,8 @@ public class Person {
     private int age;
 
     //Konstruktør
-    public Person (double height) {
+    public Person (int age, double height) {
+        this.age = age;
         this.height = height;
     }
 
@@ -19,8 +20,13 @@ public class Person {
         this.height = height;
     }
 
-    public void hasBirthday() {
+    public int getAge() {
+        return age;
+    }
 
+    public void hasBirthday() {
+        age++;
+        //alder = alder + 1; Alternativet til at lægge en til på en værdi
     }
 
 }
