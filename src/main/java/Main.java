@@ -8,6 +8,6 @@ public class Main {
       System.out.println("New height: " + p1.getHeight() + " meter");
 
       p1.hasBirthday();
-      System.out.println(p1.getAge());
+      System.out.println("Your age is: " + p1.getAge()+ " years old");
     }
 }
